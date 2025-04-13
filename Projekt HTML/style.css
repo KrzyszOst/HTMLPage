@@ -1,0 +1,258 @@
+*
+{
+    font-family:sans-serif;
+}
+body
+{
+    background-image: url(background.png);
+}
+#container
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px ;
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+@media screen and (max-width: 1200px) {
+    nav {
+        flex-direction: column;
+    }
+}
+@keyframes slidein
+{
+    from
+    {
+        transform:translateX(50%);
+    }
+    to 
+    {
+        transform:translateX(0%);
+    }
+}
+header
+{
+    text-align: center;
+    font-size: 250%;
+    color:brown;
+    background-color: ivory;
+    animation-name: slidein;
+    animation-duration: 5s;
+}
+nav
+{
+    text-align: center;
+    font-size: 150%;
+    padding:20px;
+    background-color:lightgreen;
+    border-top: 2px ;
+    border-bottom: 2px;
+}
+.dropbtn {
+    background-color: #04AA6D;
+    color: black;
+    padding: 20px;
+    font-size: 100%;
+    border: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+ 
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover 
+{
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+  
+.dropdown:hover .dropbtn
+{
+    background-color: #3e8e41;
+}
+
+nav a{
+    margin: 30px;
+    color:black;
+}
+.board 
+{
+
+margin: auto; 
+display: block;
+width: 40%;
+    
+}
+figcaption
+{
+    font-size: 200%;
+    text-align: center;
+}
+h1
+{
+    text-align:center;
+}
+article
+{
+    display: inline-block;
+    height:auto;
+
+}
+p{
+   line-height: 200%;
+}
+h1::first-letter
+{
+    font-size:120%;
+}
+a:hover
+{
+text-decoration: underline;
+color:deepskyblue
+}
+
+a
+{
+text-decoration:none;
+}
+a:active 
+{ 
+background: orange; 
+}
+footer
+{
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: rgb(216, 237, 255);
+color: black;
+text-align: center;
+}
+.duda
+{
+
+margin: auto; 
+display: block;
+width: 40%;
+            
+}
+.dudatitle
+{
+text-align: center;
+
+}
+.textplayers
+{
+    text-align: center;
+}
+.tab
+{
+    text-indent: 30px;
+    
+}
+.moves
+{
+    text-align:center;
+}
+#textfigures{
+    text-align: center;
+}
+img:hover
+{
+    width: 50%;
+    height: 50%;
+}
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.tg  
+{
+    border-collapse:collapse;
+    border-spacing:0;
+    background-color:darkcyan;
+}
+.tg td
+{
+border-color:black;
+border-style:solid;
+border-width:1px;
+font-family:Arial, sans-serif;
+font-size:14px;
+overflow:hidden;
+padding:10px 5px;
+word-break:normal;}
+.tg th
+{
+border-color:black;
+border-style:solid;
+border-width:1px;
+font-family:Arial, sans-serif;
+font-size:14px;
+font-weight:normal;
+overflow:hidden;
+padding:10px 5px;
+word-break:normal;
+}
+.tg .tg-0pky
+{border-color:inherit;
+text-align:center;
+vertical-align:top
+}
+.tg .tg-0lax
+{
+text-align:center;
+vertical-align:top}
+h6
+{
+    text-align: center;
+    text-decoration:wavy;
+}
+#linkstolocation
+{
+    text-align:center;
+    font-style:italic;
+    padding: 10px;
+    font-size: 100%;
+}
+#linkstolocation a
+{
+    margin: 30px;
+    color:azure;
+}
+h2
+{
+    text-align: center;
+    color:red;
+}
+#survey{
+    background-color: #3e8e41;
+}
+#survey:focus{
+    color:coral
+}

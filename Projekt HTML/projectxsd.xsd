@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="course" type="courseType"/>
+
+    <xs:complexType name="courseType">
+        <xs:group ref="project"/>
+    </xs:complexType>
+
+    <xs:group name="project">
+        <xs:sequence>
+            <xs:element type="authorType" name="author"/>
+            <xs:element type="informationType" name="information"/>
+            <xs:element type="figuresType" name="figures"/>
+            <xs:element type="playersType" name="players"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:complexType name="authorType">
+        <xs:sequence>
+            <xs:element name="name" type="shortStringType"/>
+            <xs:element name="surname"/>
+        </xs:sequence>
+        <xs:attribute ref="gender"/>
+    </xs:complexType>
+
+    <xs:complexType name="informationType">
+        <xs:sequence>
+            <xs:element name="title"/>
+            <xs:element name="text"/>
+        </xs:sequence>
+        <xs:attribute name="about"/>
+    </xs:complexType>
+
+    <xs:complexType name="figuresType">
+        <xs:sequence>
+			<xs:element name="figure" type="figureType" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="figureType">
+        <xs:sequence>
+            <xs:element name="name"/>
+            <xs:element name="cost" type="costType" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="moves"/>
+        </xs:sequence>
+        <xs:attribute name="line"/>
+    </xs:complexType>
+
+    <xs:simpleType name="costType">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="9"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="playersType" mixed="true">
+        <xs:sequence>
+            <xs:element name="list" type="listType"/>
+            <xs:element name="player" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="media">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="image"/>
+                                </xs:sequence>
+                                <xs:attribute name="source" type="xs:anyURI"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="name"/>
+                        <xs:element name="surname"/>
+                        <xs:element name="ranking">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="highest">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="fidepoints">
+                                                    <xs:complexType>
+                                                        <xs:simpleContent>
+                                                            <xs:extension base="xs:decimal">
+                                                                <xs:attribute name="points">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:int">
+                                                                            <xs:minInclusive value="0"/>
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:attribute>
+                                                            </xs:extension>
+                                                        </xs:simpleContent>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                                <xs:attribute name="range"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="number"/>
+                    <xs:attribute ref="alive" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:attribute name="alive" type="aliveType"/>
+
+    <xs:simpleType name="aliveType">
+        <xs:restriction base="xs:string">
+			<xs:enumeration value="Yes"/>
+			<xs:enumeration value="No"/>
+		</xs:restriction>
+    </xs:simpleType>
+
+    <xs:attribute name="gender" type="genderType"/>
+
+    <xs:simpleType name="genderType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="male"/>
+            <xs:enumeration value="female"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="shortStringType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="30"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="longStringType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="70"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+    <xs:simpleType name="listType">
+		<xs:list itemType="xs:string"/>
+	</xs:simpleType>
+
+</xs:schema>

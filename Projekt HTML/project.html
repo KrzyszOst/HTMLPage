@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTf-8"/>
+            <title>My Passion - Chess </title>
+            <link rel="stylesheet" type ="text/css"   
+            href="style.css"/>
+            <meta name="author" content="Krzysztof Ostrzycki">
+            <meta name="viewport" content="width=device-width, initial-scale=1.">
+    </head>
+    <body>
+        
+        <div id="container">
+        <header><span>My Passion Project: Chess</span></header>
+        <nav>
+            <a href="project.html">Main Page</a>
+            <a href="projectrules.html">Chess Rules</a>
+            <a href="projectfigures.html">Figures</a>
+            <a href="projectplayers.html">Best Players in history</a>
+            <div class="dropdown">
+                <button class="dropbtn">Links</button>
+                <div class="dropdown-content">
+                    <a href="https://www.chess.com/play/online">Play chess online</a>
+                    <a href="https://chesspathways.com/chess-openings/">Chess Openings</a>
+                    <a href="https://chessfox.com/free-chess-course-for-beginners/">Chess lessons</a>
+        </div>
+        </div>
+        </nav>
+        <main>
+            <article>
+            <h1>General Information about Chess</h1>
+            <p><span>
+                Chess is a board game between two players. It is sometimes called Western chess or international chess to distinguish it from related games, such as xiangqi (Chinese chess) and shogi (Japanese chess). The current form of the game emerged in Spain and the rest of Southern Europe during the second half of the 15th century after evolving from chaturanga, a similar but much older game of Indian origin. Today, chess is one of the world's most popular games, played by millions of people worldwide.
+
+                Chess is an abstract strategy game and involves no hidden information. It is played on a chessboard with 64 squares arranged in an eight-by-eight grid. At the start, each player controls sixteen pieces: one king, one queen, two rooks, two bishops, two knights, and eight pawns. The player who moves first controls white pieces, and the other controls black pieces. The object of the game is to checkmate the opponent's king, whereby the king is under immediate attack (in "check") and there is no way for it to escape. There are also several ways a game can end in a draw.
+                
+                Organized chess arose in the 19th century. Chess competition today is governed internationally by FIDE (International Chess Federation). The first universally recognized World Chess Champion, Wilhelm Steinitz, claimed his title in 1886; Magnus Carlsen is the current World Champion. A huge body of chess theory has developed since the game's inception. Aspects of art are found in chess composition, and chess in its turn influenced Western culture and art, and has connections with other fields such as mathematics, computer science, and psychology.
+                
+                One of the goals of early computer scientists was to create a chess-playing machine. In 1997, Deep Blue became the first computer to beat the reigning World Champion in a match when it defeated Garry Kasparov. Today's chess engines are significantly stronger than the best human players and have deeply influenced the development of chess theory.
+            </span></p>
+            </article>
+                <p><img class="board" src="plansza.png" alt="Chess Board"></p>
+            <figure>
+                <figcaption>Chess Board</figcaption>
+            </figure>
+            <table class="tg">
+                <thead>
+                  <tr>
+                    <th class="tg-0pky">Time in Minutes</th>
+                    <th class="tg-0pky">1</th>
+                    <th class="tg-0pky">3</th>
+                    <th class="tg-0lax">10</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td class="tg-0pky">Ranking</td>
+                      <td class="tg-0pky">1200</td>
+                      <td class="tg-0pky">1070</td>
+                      <td class="tg-0lax">1400</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                  <h6>My Personal Chess achievements</h6>
+            
+
+            <br><br>
+                
+                  <svg width="100px" height="50px" style="margin: auto; display: block">
+                    <defs>
+                        <radialGradient id="radialGradient1">
+                            <stop offset="0%" style="stop-color: red;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color: blue;stop-opacity:0.5" />
+                            <stop offset="100%" style="stop-color: yellow;stop-opacity:1" />
+                        </radialGradient>
+                        <radialGradient id="radialGradient2" xlink:href="#radialGradient1" cx="50%" cy="50%" fx="50%" fy="50%" r="50%"/>
+                    </defs>
+                    <rect width="100px" height="50px" style="fill: url(#radialGradient2)"/>
+                </svg>
+                <h6>SVG Grafic</h6>
+
+
+                <br><br>
+                <h2>Short Survey</h2>
+                <div id="survey">
+                <form action="survey.html" method="get">
+                <fieldset>                 
+                    <label for="Name">Name: </label>
+                    <input type="text" id="Name">
+                    <label for="Surname">Surname: </label>
+                    <input type="text" id="Surname">
+                    <p>Enter your Gender:</p>
+                    <input type="radio" name="Gender" value="Kobieta">Women
+                    <input type="radio" name="Gender" value="Mężczyzna">Men
+                    <p>How old are you?</p>
+                    <input type="radio" name="Age" value="lower than 18">lower than 18<br>
+                    <input type="radio" name="Age" value="18-39">18-39<br>
+                    <input type="radio" name="Age" value="40-60">40-60<br>
+                    <input type="radio" name="Age" value="over 60">over 60
+                    <p>What is your favourite chess opening?</p>
+                    <input type="checkbox" name="Opening" value="English Opening">English Opening<br>
+                    <input type="checkbox" name="Opening" value="Four Knights Game">Four Knights Game<br>
+                    <input type="checkbox" name="Opening" value="King’s Gambit">King’s Gambit<br>
+                    <input type="checkbox" name="Opening" value="Two Knights Defense">Two Knights Defense<br>
+                    <input type="checkbox" name="Opening" value="Other">Another (enter another):
+                    <input name="Muzyka">
+                    <p>Who is your favourite player?</p>
+                    <select name="players">
+	                    <option>Jan Krzysztof Duda</option>
+	                    <option>Magnus Carlsen</option>
+	                    <option>Hikaru Nakamura</option>
+                        <option>Gary Kasparov</option>
+	                    <option>Bobby Fisher</option>
+                        <option>Jose Raul Capablanca</option>
+                    </select>
+                    <p>Submit your comment:</p>
+                    <textarea name="Comment" cols="50" rows="10">Please write something here...</textarea>
+                    <br><br><br>
+                    <input type="file" name="file">
+                    <input type="submit" value="Send survey">
+                    <input type="reset" value="Clear data">
+                    <br><br><br>
+                        </fieldset>
+                </form>
+            </div>
+            <footer>Krzysztof Ostrzycki Data Engineering Group 2</footer>
+
+        </main>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="projectxsd.xsd">
+
+	<author gender="male">
+		<name>Krzysztof</name>
+		<surname>Ostrzycki</surname>
+	</author>
+
+	<information about="chess">
+		<title>Chess</title>
+		<text>
+			Chess is a board game between two players. It is sometimes called Western chess or international chess to distinguish it from related games, such as xiangqi (Chinese chess) and shogi (Japanese chess). The current form of the game emerged in Spain and the rest of Southern Europe during the second half of the 15th century after evolving from chaturanga, a similar but much older game of Indian origin. Today, chess is one of the world's most popular games, played by millions of people worldwide. Chess is an abstract strategy game and involves no hidden information. It is played on a chessboard with 64 squares arranged in an eight-by-eight grid. At the start, each player controls sixteen pieces: one king, one queen, two rooks, two bishops, two knights, and eight pawns. The player who moves first controls white pieces, and the other controls black pieces. The object of the game is to checkmate the opponent's king, whereby the king is under immediate attack (in "check") and there is no way for it to escape. There are also several ways a game can end in a draw. Organized chess arose in the 19th century. Chess competition today is governed internationally by FIDE (International Chess Federation). The first universally recognized World Chess Champion, Wilhelm Steinitz, claimed his title in 1886; Magnus Carlsen is the current World Champion. A huge body of chess theory has developed since the game's inception. Aspects of art are found in chess composition, and chess in its turn influenced Western culture and art, and has connections with other fields such as mathematics, computer science, and psychology. One of the goals of early computer scientists was to create a chess-playing machine. In 1997, Deep Blue became the first computer to beat the reigning World Champion in a match when it defeated Garry Kasparov. Today's chess engines are significantly stronger than the best human players and have deeply influenced the development of chess theory.
+		</text>
+	</information>
+
+	<figures>
+		<figure line="1">
+			<name>Bishop</name>
+			<cost>3</cost>
+			<moves>Diagonals</moves>
+		</figure>
+		<figure line="1">
+			<name>King</name>
+			<moves>adjoining square</moves>
+		</figure>
+		<figure line="1">
+			<name>Queen</name>
+			<cost>9</cost>
+			<moves>vertically, horizontally, diagonally</moves>
+		</figure>
+		<figure line="1">
+			<name>Rook</name>
+			<cost>5</cost>
+			<moves>forward, backward or sideways</moves>
+		</figure>
+		<figure line="2">
+			<name>Pawn</name>
+			<cost>1</cost>
+			<moves>directly forward</moves>
+		</figure>
+		<figure line="1">
+			<name>Knight</name>
+			<cost>3</cost>
+			<moves>two squares vertically and one square horizontally</moves>
+		</figure>
+	</figures>
+
+	<players>
+		Top 5 Best players in history
+		<list>Kasparov, Carlsen, Fischer, Capablanca, Karpov</list>
+		<player number="1" alive="Yes">
+			<media>
+				<image source="gary.png">Garry Kimovich Kasparov</image>
+			</media>
+			<name>Garry</name>
+			<surname>Kasparov</surname>
+			<ranking range="world">
+				<highest>
+					<fidepoints points="2851">2851</fidepoints>
+				</highest>
+			</ranking>
+		</player>
+		<player number="2" alive="Yes">
+			<media>
+				<image source="magnus.png">Magnus Carlsen</image>
+			</media>
+			<name>Magnus</name>
+			<surname>Carlsen</surname>
+			<ranking range="world">
+				<highest>
+					<fidepoints points="2882">2882</fidepoints>
+				</highest>
+			</ranking>
+		</player>
+		<player number="3" alive="No">
+			<media>
+				<image source="bobby.png">Bobby Fischer</image>
+			</media>
+			<name>Bobby</name>
+			<surname>Fischer</surname>
+			<ranking range="world">
+				<highest>
+					<fidepoints points="2895">2895</fidepoints>
+				</highest>
+			</ranking>
+		</player>
+		<player number="4" alive="No">
+			<media>
+				<image source="raul.png">Jose Raul Capablanca</image>
+			</media>
+			<name>Jose</name>
+			<surname>Capablanca</surname>
+			<ranking range="world">
+				<highest>
+					<fidepoints points="2725">2725</fidepoints>
+				</highest>
+			</ranking>
+		</player>
+		<player number="5" alive="Yes">
+			<media>
+				<image source="Karpov.png">Anatoly Karpov</image>
+			</media>
+			<name>Anatoly</name>
+			<surname>Karpov</surname>
+			<ranking range="world">
+				<highest>
+					<fidepoints points="2780">2780</fidepoints>
+				</highest>
+			</ranking>
+		</player>
+	</players>
+</course>
